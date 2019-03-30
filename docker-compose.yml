@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    web-alohomora:
+        build: "./web-alohomora/.build-alohomora"
+        container_name: web-alohomora
+        volumes:
+            - "./web-alohomora/data:/usr/src/app/data"
+        ports:
+            - "127.0.0.1:80:8080"
+        environment:
+            ALOHOMORA_TOKEN: "my_awesome_token"

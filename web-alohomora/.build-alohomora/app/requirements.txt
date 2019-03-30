@@ -1,0 +1,5 @@
+Jinja2
+cryptography
+aiohttp_jinja2
+aiohttp
+aiohttp_session
