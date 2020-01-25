@@ -22,7 +22,8 @@ You will need to install `inotify` to detect changes to the `allow.conf` file. M
 
 ```
 $ sudo apt install inotify-tools
-$ chmod +x web-alohomora/alohomora-watcher.sh 
+$ cd alohomora
+$ chmod +x ./alohomora-watcher.sh 
 $ setsid ./alohomora_watcher.sh >alohomora.logs 2>&1 < /dev/null &
 ```
 
